@@ -17,17 +17,17 @@ object DayOne {
   })
 
   def compareSmallestNumbers(): Unit = {
-    val tuples = unsortedLeftList.sorted.zip(unsortedRightList.sorted)
-    val distances = tuples.map((left, right) => {
-      (left - right).abs
-    })
-
-    println(s"Total distance: ${distances.sum}")
+    println(s"Total distance: ${unsortedLeftList.sorted
+        .zip(unsortedRightList.sorted)
+        .map((left, right) => {
+          (left - right).abs
+        })
+        .sum}")
   }
 
   def calculateSimilarity(): Unit = {
-    val similarityScores = unsortedLeftList.map { id => id * unsortedRightList.count(_ == id)}
-
-    println(s"Similarity score: ${similarityScores.sum}")
+    println(s"Similarity score: ${unsortedLeftList.map { id =>
+        id * unsortedRightList.count(_ == id)
+      }.sum}")
   }
 }
