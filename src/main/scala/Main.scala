@@ -1,12 +1,19 @@
 package org.majesnix.aoc2024
 
-import DayOne.DayOne.{calculateSimilarity, compareSmallestNumbers}
+import Day01.Day01.{calculateSimilarity, compareSmallestNumbers}
 
-object Main {
+import Day02.Day02.howManyReportsAreSafe
+import Day03.Day03.{sumUpValidInstructions, sumUpValidInstructionsIfDo}
 
-  def main(args: Array[String]): Unit = {
+object Main:
+  def main(args: Array[String]): Unit =
     // Day One
     compareSmallestNumbers()
     calculateSimilarity()
-  }
-}
+
+    // Day Two
+    howManyReportsAreSafe()
+
+    // Day Three
+    sumUpValidInstructions()
+    sumUpValidInstructionsIfDo()
