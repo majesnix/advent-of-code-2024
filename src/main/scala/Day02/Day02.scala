@@ -1,10 +1,8 @@
 package org.majesnix.aoc2024
 package Day02
 
-import AdventHelpers.readFile
-
 object Day02:
-  private val input = readFile("Day02/input").split("\n").toList
+  private val input = readDayInputFile("Day02").split("\n").toList
 
   private def isSafe(list: List[Int])(implicit
       ord: Ordering[Int]

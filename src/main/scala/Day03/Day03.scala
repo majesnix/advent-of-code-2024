@@ -1,10 +1,8 @@
 package org.majesnix.aoc2024
 package Day03
 
-import AdventHelpers.readFile
-
 object Day03:
-  private val input = readFile("Day03/input")
+  private val input = readDayInputFile("Day03")
   private val mulMatcher = """mul\((\d{1,3}),(\d{1,3})\)""".r
 
   def sumUpValidInstructions(): Unit =

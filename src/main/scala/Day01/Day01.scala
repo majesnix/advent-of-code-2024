@@ -1,10 +1,8 @@
 package org.majesnix.aoc2024
 package Day01
 
-import AdventHelpers.readFile
-
 object Day01:
-  private val input = readFile("Day01/input").split("\n").toList
+  private val input = readDayInputFile("Day01").split("\n").toList
 
   private var unsortedLeftList: List[Int] = List()
   private var unsortedRightList: List[Int] = List()
